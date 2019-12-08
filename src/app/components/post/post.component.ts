@@ -8,8 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class PostComponent implements OnInit {
 
   constructor() { }
+  itemsPerSlide = 2;
+  slidesChangeMessage = '';
+  singleSlideOffset = false;
 
   ngOnInit() {
+  }
+
+  onSlideRangeChange(indexes: number[]): void {
+    this.slidesChangeMessage = `Slides have been switched: ${indexes}`;
   }
 
 }
