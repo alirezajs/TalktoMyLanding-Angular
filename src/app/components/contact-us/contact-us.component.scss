@@ -1,0 +1,68 @@
+@import "../../../scss/main";
+.contact-us-section {
+    min-height: 500px;
+    margin-top: 8em;
+    margin-bottom: 8em;
+    padding: 0px 10px;
+    @include responsive(sm) {
+      padding: 10px 20px 54px 20px;
+      margin-top: 1.5em;
+      margin-bottom: 1.5em;
+      min-height: 200px;
+    }
+    @include responsive(xsm) {
+      padding: 10px 20px 54px 20px;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      min-height: 200px;
+    }
+    @include responsive(md) {
+      padding: 0px;
+    }
+    .form-control {
+      border-radius: 10px;
+    }
+    .contact-us-list {
+      border-radius: 10px;
+      list-style: none;
+      list-style-type: none;
+      padding: 16px;
+  
+      font-size: 0.8rem;
+      .contact-us-list-item:first-child {
+        margin-top: 0px;
+      }
+      .contact-us-list-item {
+        margin: 15px 0;
+        &::before {
+          content: "\25A0";
+          color: $scooter-blue;
+          font-weight: bold;
+          display: inline-block;
+          width: 2em;
+          margin-left: -1em;
+          font-size: 8px;
+        }
+        .description {
+          display: block;
+          padding-right: 1em;
+        }
+      }
+    }
+    .section-title {
+      padding: 60px;
+      @include responsive(sm) {
+        padding: 20px 31px;
+      }
+  
+      .section-title-lable {
+        font-weight: bold;
+  
+        color: $scooter-blue;
+      }
+      .section-title-description {
+        color: $mine-shaft;
+        font-size: 0.8rem;
+      }
+    }
+  }

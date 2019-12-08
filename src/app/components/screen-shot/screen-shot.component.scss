@@ -1,0 +1,30 @@
+@import "../../../scss/main";
+.screnshot-section {
+    padding: 10px;
+    margin-top: 5em;
+    @include responsive(sm) {
+      order: 1;
+      margin-top: 2em;
+    }
+    .header-service-item-img {
+      -webkit-box-shadow: 0 0 5px 0 rgba(0, 113, 128, 0.16);
+      -moz-box-shadow: 0 0 5px 0 rgba(0, 113, 128, 0.16);
+      box-shadow: 0 0 5px 0 rgba(0, 113, 128, 0.16);
+      @include responsive(xsm) {
+        margin-top: 0.8rem;
+      }
+      @include responsive(sm) {
+        margin-top: 0.8rem;
+      }
+    }
+    .section-title {
+      .section-title-lable {
+        color: $scooter-blue;
+        font-weight: bold;
+      }
+      .section-title-description {
+        color: $dove-gray;
+        font-size: 0.9rem;
+      }
+    }
+  }

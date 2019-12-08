@@ -1,0 +1,79 @@
+@import "../../../scss/main";
+.feature-section {
+    margin-top: 10em;
+    @include responsive(sm) {
+      margin-top: 3em;
+    }
+    .feature-section-wrapper {
+      flex: 0 0 95%;
+      padding: 0 170px 30px;
+      color: $dove-gray;
+      font-size: 14px;
+      @include responsive(sm) {
+        padding: 34px 0;
+      }
+      @include responsive(xsm) {
+        padding: 34px 0;
+      }
+      .feature-list {
+        list-style: none;
+        padding: 0;
+        .feature-list-item {
+          margin: 40px 0;
+          @include responsive(xsm) {
+            padding-right: 0px;
+          }
+          @include responsive(sm) {
+            padding-right: 0px;
+          }
+          img {
+            width: 50px;
+            @include responsive(xsm) {
+              width: 43px;
+            }
+            @include responsive(sm) {
+              width: 43px;
+              margin-top: -6px;
+            }
+          }
+          .feature-list-item-dis {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+    .section-title {
+      padding: 50px;
+      @include responsive(sm) {
+        order: 2;
+        padding: 0;
+      }
+      @include responsive(xsm) {
+        order: 2;
+        padding: 0;
+      }
+      .section-title-lable {
+        color: $scooter-blue;
+        font-weight: bold;
+      }
+    }
+    .feature-list-container {
+      @include responsive(sm) {
+        order: 3;
+        padding-right: 0;
+      }
+      @include responsive(xsm) {
+        order: 3;
+        padding-right: 0;
+      }
+    }
+    .feature-img-container {
+      margin-top: -65px;
+      @include responsive(sm) {
+        order: 1;
+      }
+      @include responsive(xsm) {
+        order: 1;
+      }
+    }
+  }

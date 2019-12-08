@@ -1,0 +1,44 @@
+@import "../../../scss/main";
+.services-section {
+    .header-services {
+      margin-top: -9em;
+      padding: 0px 150px;
+      @include responsive(xsm) {
+        padding: 0px 50px;
+        margin-top: 15rem;
+      }
+      @include responsive(sm) {
+        padding: 0px 81px;
+        margin-top: 15rem;
+      }
+      @include responsive(md) {
+        padding: 0;
+      }
+      .header-services-item {
+        background-color: $solid-white;
+        border-radius: 24px;
+        box-shadow: 0px 0 20px 0 rgba(0, 113, 128, 0.2);
+        text-align: center;
+        padding: 20px;
+        color: $dove-gray;
+        @include responsive(sm) {
+          margin: 10px 0;
+        }
+        @include responsive(xsm) {
+          margin: 10px 0;
+        }
+        .header-service-item-img {
+          width: 60px;
+          height: 60px;
+        }
+        .header-service-item-title {
+          margin: 20px 0;
+          color: $mine-shaft;
+          font-size: 0.8rem;
+        }
+        .header-service-item-dis {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }

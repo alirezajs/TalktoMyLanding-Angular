@@ -1,1 +1,169 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./scss/main";
+html {
+    width: 100% !important;
+  }
+  //body
+  body {
+    background-color: $alabaste-white;
+    direction: rtl;
+    text-align: right;
+    font-size: 16px;
+    font-family: dana, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+      sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 1.71;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  h1,
+  .h1 {
+    font-size: 2em;
+  }
+  h2,
+  .h2 {
+    font-size: 1.6em;
+  }
+  h3,
+  .h3 {
+    font-size: 1.4em;
+  }
+  .justify-content-evenly {
+    justify-content: space-evenly !important;
+  }
+  
+  //1.section types
+  .white-section {
+    background-color: $solid-white;
+    color: $solid-black;
+    @include responsive(sm) {
+      height: auto;
+    }
+  }
+  .green-section {
+    background-color: $scooter-blue;
+    color: $solid-white;
+  }
+  .defult-section {
+    background-color: transparent;
+    color: $solid-black;
+  }
+  .black-section {
+    background-color: $solid-black;
+    color: $solid-white;
+  }
+  .rounded-bottom-right {
+    border-bottom-right-radius: $radius-sections-size !important;
+    @include responsive(xsm) {
+      border-bottom-right-radius: $radius-sections-size-mobile !important;
+    }
+    @include responsive(sm) {
+      border-bottom-right-radius: $radius-sections-size-mobile !important;
+    }
+  }
+  .rounded-bottom-left {
+    border-bottom-left-radius: $radius-sections-size !important;
+    @include responsive(xsm) {
+      border-bottom-left-radius: $radius-sections-size-mobile !important;
+    }
+    @include responsive(sm) {
+      border-bottom-left-radius: $radius-sections-size-mobile !important;
+    }
+  }
+  .rounded-bottom {
+    border-bottom-left-radius: $radius-sections-size !important;
+    border-bottom-right-radius: $radius-sections-size !important;
+    @include responsive(xsm) {
+      border-bottom-left-radius: $radius-sections-size-mobile !important;
+      border-bottom-right-radius: $radius-sections-size-mobile !important;
+    }
+    @include responsive(sm) {
+      border-bottom-left-radius: $radius-sections-size-mobile !important;
+      border-bottom-right-radius: $radius-sections-size-mobile !important;
+    }
+  }
+  .rounded-right {
+    border-top-right-radius: $radius-sections-size !important;
+    border-bottom-right-radius: $radius-sections-size !important;
+    @include responsive(sm) {
+      border-top-right-radius: $radius-sections-size-mobile !important;
+      border-bottom-right-radius: $radius-sections-size-mobile !important;
+    }
+    @include responsive(sm) {
+      border-top-right-radius: $radius-sections-size-mobile !important;
+      border-bottom-right-radius: $radius-sections-size-mobile !important;
+    }
+  }
+  .rounded-top {
+    border-top-right-radius: $radius-sections-size !important;
+    border-top-left-radius: $radius-sections-size !important;
+    @include responsive(xsm) {
+      border-top-right-radius: $radius-sections-size-mobile !important;
+      border-top-left-radius: $radius-sections-size-mobile !important;
+    }
+    @include responsive(sm) {
+      border-top-right-radius: $radius-sections-size-mobile !important;
+      border-top-left-radius: $radius-sections-size-mobile !important;
+    }
+  }
+  .rounded-cloudy {
+    border-top-right-radius: $radius-sections-size !important;
+    border-bottom-left-radius: $radius-sections-size !important;
+    @include responsive(xsm) {
+      border-top-right-radius: $radius-sections-size-mobile !important;
+      border-bottom-left-radius: $radius-sections-size-mobile !important;
+    }
+    @include responsive(sm) {
+      border-top-right-radius: $radius-sections-size-mobile !important;
+      border-bottom-left-radius: $radius-sections-size-mobile !important;
+    }
+  }
+  .btn-rounded {
+    border-radius: 50px;
+  }
+  .btn-stretch {
+    padding: 0.5rem 3.3rem;
+   
+    @include responsive(xsm){
+      padding: 0.4rem 2.5rem;
+      font-size: 0.95rem;
+    }
+    @include responsive(sm){
+      padding: 0.4rem 2.5rem;
+      font-size: 0.95rem;
+    }
+  }
+  .form-control{
+    @include responsive(xsm){
+      font-size: 0.8rem
+    }
+    @include responsive(sm){
+      font-size: 0.8rem
+    }
+  }
+  
+  .ltr {
+    direction: ltr;
+  }
+  
+  .doawnload-ways {
+    width: 100%;
+    margin: 0px;
+    @include responsive(xsm) {
+      text-align: right;
+      margin-top: 2rem;
+    }
+    @include responsive(sm) {
+      text-align: right;
+      margin-top: 1rem;
+    }
+    .download-ways-btn {
+      width: 140px;
+  
+      @include responsive(xsm) {
+        width: 110px;
+      }
+      @include responsive(sm) {
+        width: 130px;
+      }
+    }
+  }

@@ -1,0 +1,52 @@
+@import "../../../scss/main";
+.footer-section {
+    padding: 50px 150px;
+    @include responsive(sm) {
+      padding: 35px 20px;
+      text-align: center;
+    }
+    @include responsive(xsm) {
+      padding: 35px 20px;
+      text-align: center;
+    }
+    @include responsive(md) {
+      padding: 35px 20px;
+      text-align: center;
+    }
+    .footer-details {
+      font-size: 0.8rem;
+      @include responsive(sm) {
+        margin-top: 2em;
+        order: 2;
+      }
+      @include responsive(xsm) {
+        margin-top: 2em;
+        order: 2;
+      }
+      @include responsive(md) {
+        margin-top: 2em;
+      }
+    }
+    .footer-logo {
+      img {
+        width: 150px;
+      }
+      @include responsive(sm) {
+        order: 1;
+      }
+      @include responsive(xsm) {
+        order: 1;
+      }
+    }
+    .doawnload-ways {
+      @include responsive(sm) {
+        order: 3;
+        margin-left: 13px;
+      }
+      @include responsive(xsm) {
+        order: 3;
+        margin-top: 19px;
+        margin-left: 13px;
+      }
+    }
+  }
