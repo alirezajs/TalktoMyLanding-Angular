@@ -13,7 +13,7 @@ export class HomeEffects {
     getComment$: Observable<Action> = createEffect(() =>
         this._actions$.pipe(
             ofType(AppActions.GetCommentAction),
-            mergeMap((action) => this._commentService.getRandomComment(5)
+            mergeMap((action) => this._commentService.getRandomComment('5')
                 .pipe(
                     map((data: ICommentsHttp) => {
                         return AppActions.GetCommentSuccessAction({ payload: data })

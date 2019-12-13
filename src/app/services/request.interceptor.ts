@@ -9,6 +9,11 @@ export class RequestInterceptor implements HttpInterceptor {
         request: HttpRequest<any>, next: HttpHandler
     ): Observable<HttpEvent<any>> {
         request = request.clone({
+            setHeaders: {
+                token: 'web',
+                'Access-Control-Allow-Methods':'GET, POST, DELETE, PUT, OPTIONS',
+                'Access-Control-Allow-Origin': '*'
+            },             
             url: `${environment.apiUrl}${request.url}`
         });
         return next.handle(request);

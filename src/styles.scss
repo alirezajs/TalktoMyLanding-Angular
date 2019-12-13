@@ -39,6 +39,14 @@ html {
       height: auto;
     }
   }
+
+  .gray-section {
+    background-color: $porcelain-gray;
+    color: $solid-black;
+    @include responsive(sm) {
+      height: auto;
+    }
+  }
   .green-section {
     background-color: $scooter-blue;
     color: $solid-white;

@@ -1,0 +1,21 @@
+@import "../../../scss/main";
+
+.comment-card {
+  border-radius: 8px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.05);
+  background-color: $solid-white;
+  color: $swamp-black;
+  .comment-card-content {
+    padding: 10px 50px 40px 50px;
+    @include responsive(xsm) {
+      padding: 10px 50px 10px 50px;
+    }
+    @include responsive(sm) {
+      padding: 10px 5px 10px 5px;
+    }
+  }
+  .comment-card-footer {
+    padding: 10px 43px 10px 36px;
+    border-top: 1px solid $alabaste-white;
+  }
+}

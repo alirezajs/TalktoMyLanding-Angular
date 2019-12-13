@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'http://talktome.yashoid.com/api/v1/'
+  apiUrl: ' http://opentalkz.com/api/v1/'
 };

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RandomCommentComponent } from './random-comment.component';
+import { CommentComponent } from './comment.component';
 
 describe('RandomCommentComponent', () => {
-  let component: RandomCommentComponent;
-  let fixture: ComponentFixture<RandomCommentComponent>;
+  let component: CommentComponent;
+  let fixture: ComponentFixture<CommentComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RandomCommentComponent ]
+      declarations: [ CommentComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RandomCommentComponent);
+    fixture = TestBed.createComponent(CommentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

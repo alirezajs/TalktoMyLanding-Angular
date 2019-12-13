@@ -12,7 +12,7 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { RandomCommentComponent } from './pages/random-comment/random-comment.component';
+import { CommentComponent } from './pages/comment/comment.component';
 import { StoreModule } from '@ngrx/store';
 import { reducers, metaReducers } from './store';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -20,6 +20,8 @@ import { RequestInterceptor } from './services/request.interceptor';
 import { EffectsModule } from '@ngrx/effects';
 import { AppEffects } from './app.effects';
 import { HomeComponent } from './pages/home/home.component';
+import { CommentCardComponent } from './components/comment-card/comment-card.component';
+import { ResponseCommentCardComponent } from './components/response-comment-card/response-comment-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,8 +32,10 @@ import { HomeComponent } from './pages/home/home.component';
     PostComponent,
     ContactUsComponent,
     FooterComponent,
-    RandomCommentComponent,
+    CommentComponent,
     HomeComponent,
+    CommentCardComponent,
+    ResponseCommentCardComponent,
   ],
   imports: [
     BrowserModule,

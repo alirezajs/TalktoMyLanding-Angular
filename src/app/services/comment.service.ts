@@ -15,7 +15,7 @@ export class CommentService {
    * Gets a comment randomly
    * @returns comment model
    */
-  public getRandomComment(post_id: number): Observable<ICommentsHttp> {
+  public getRandomComment(post_id: string): Observable<ICommentsHttp> {
     return this._http.get<ICommentsHttp>(`post?id=${post_id}`)
   }
 }

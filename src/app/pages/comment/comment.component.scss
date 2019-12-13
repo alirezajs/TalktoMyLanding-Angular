@@ -1,0 +1,50 @@
+@import "../../../scss/main";
+
+.comment-section {
+  padding-bottom: 50px;
+
+  .comment-section-container {
+    color: $scorpion-gray;
+    padding: 0 289px 50px 80px;
+    min-height: 516px;
+    width: 85vw;
+    color: $swamp-black;
+    @include responsive(xsm) {
+      padding: 20px 50px;
+      font-size: 12px;
+      width: 95vw;
+    }
+    @include responsive(sm) {
+      padding: 20px;
+      font-size: 12px;
+      width: 95vw;
+    }
+
+    @include responsive(md) {
+      padding: 0;
+    }
+
+    .comment-first-row {
+      padding: 10px 0 10px 0;
+      @include responsive(xsm) {
+        padding: 5px 0 10px 0;
+      }
+      @include responsive(sm) {
+        padding: 5px 30px 10px 10px;
+      }
+      @include responsive(md) {
+        padding: 10px 30px 10px 0;
+      }
+    }
+
+    .comment-section-logo {
+      width: 180px;
+      @include responsive(xsm) {
+        width: 120px;
+      }
+      @include responsive(sm) {
+        width: 140px;
+      }
+    }
+  }
+}
