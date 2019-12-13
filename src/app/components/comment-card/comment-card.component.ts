@@ -8,17 +8,15 @@ import { CommentService } from 'src/app/services/comment.service';
 })
 export class CommentCardComponent implements OnInit {
 
-  constructor(private _commentService:CommentService) {
+  constructor(private _commentService: CommentService) {
 
   }
-  @Input() comment: IComment
+  @Input() public comment: IComment
 
   ngOnInit() {
-    const id='0b6e6888dfcd461e9f9b582e40e434dd'
-    this._commentService.getRandomComment(id).subscribe(res=>{
-      console.log()
-    })
+    console.log(this.comment);
+  }
+  public getTimeSpan() {
 
   }
-
 }

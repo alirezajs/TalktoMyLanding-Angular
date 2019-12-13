@@ -22,6 +22,7 @@ import { AppEffects } from './app.effects';
 import { HomeComponent } from './pages/home/home.component';
 import { CommentCardComponent } from './components/comment-card/comment-card.component';
 import { ResponseCommentCardComponent } from './components/response-comment-card/response-comment-card.component';
+import { MessageTimePipe } from './pipes/message-time-pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,7 @@ import { ResponseCommentCardComponent } from './components/response-comment-card
     HomeComponent,
     CommentCardComponent,
     ResponseCommentCardComponent,
+    MessageTimePipe,
   ],
   imports: [
     BrowserModule,

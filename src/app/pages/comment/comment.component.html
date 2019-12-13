@@ -6,12 +6,13 @@
           <img class="comment-section-logo" src="./assets/images/openTalk-logo01.png" alt="openTalkz">
         </div>
       </div>
-      <app-comment-card></app-comment-card>
-      <div class="mt-2 p-1">
-        نظرات شما:
+      <div *ngIf="comment">
+        <app-comment-card [comment]='comment'></app-comment-card>
+        <div class="mt-2 p-1">
+          نظرات شما:
+        </div>
+        <app-response-comment-card [comment]="item" *ngFor="let item of comment.comments"></app-response-comment-card>
       </div>
-      <app-response-comment-card></app-response-comment-card>
-      <app-response-comment-card></app-response-comment-card>
     </div>
   </div>
 </section>

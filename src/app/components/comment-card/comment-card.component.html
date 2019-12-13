@@ -1,20 +1,18 @@
 <div class="comment-card">
     <div class="comment-card-content">
-        از زمانی که شدم مهمان تو من غریب و تو غریبه دل مایی یاد ندارم که شدم همدم تو پس چرا گشته‌ام در پی تو در فراغت که
-        شدم از زمانی که شدم مهمان تو من غریب و تو غریبه دل مایی یاد ندارم که شدم همدم تو پس چرا گشته‌ام در پی تو در
-        فراغت که شدم
+        {{comment.content}}
     </div>
     <div class="comment-card-footer row">
         <div class="col">
             <span class="ml-3"><i class="fa fa-eye ml-1"></i>
-                247
+                {{comment.view_count}}
             </span>
             <span> <i class="fa fa-comment ml-1"></i>
-                2</span>
+                {{comment.comments.length}}</span>
         </div>
         <div class="col align-self-end text-left">
             <i class="fa fa-calendar-o ml-1"></i>
-            2 ساعت قبل
+            {{comment.created_time  | messageTime}}
         </div>
     </div>
 </div>
