@@ -60,9 +60,28 @@
         padding: 25px 5px;
         text-align: center;
       }
+      .dark {
+        @include responsive(sm) {
+          display: block;
+        }
+        @include responsive(sm) {
+          display: block;
+        }
+      }
+      .light {
+        @include responsive(sm) {
+          display: none;
+        }
+        @include responsive(sm) {
+          display: none;
+        }
+      }
     }
   }
   .doawnload-ways {
+    .dark {
+      display: none;
+    }
     @include responsive(sm) {
       order: 3;
       margin-left: 13px;

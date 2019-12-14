@@ -7,4 +7,10 @@
 @import "vendors/normalize";
 
 //3. bootstrapt template
+@import "_font.scss";
+
+//3. bootstrapt template
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import "_custom-bootstrapt";
 @import "_font.scss"
+

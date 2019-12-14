@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ICommentsHttp } from 'src/app/models/http-models/comment-http.interface';
 import { CommentService } from 'src/app/services/comment.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-comment',
@@ -9,17 +10,28 @@ import { CommentService } from 'src/app/services/comment.service';
 })
 export class CommentComponent implements OnInit {
 
-  constructor(private _commentService: CommentService) { }
+  constructor(
+    private _commentService: CommentService,
+    private _route: ActivatedRoute) { }
 
   comment: ICommentsHttp;
 
-
-
-  ngOnInit() {
-    const id = '0b6e6888dfcd461e9f9b582e40e434dd'
+  private GetComment(id: string) {
     this._commentService.getRandomComment(id).subscribe(res => {
       this.comment = res;
-      console.log(this.comment)
+    })
+  }
+
+  ngOnInit() {
+    this._route.params.subscribe(params => {
+      if (params && params.id) {
+        this.GetComment(params.id)
+      }
+      else{
+        this._route.queryParams.subscribe(queryParams => {
+          this.GetComment(queryParams.id)
+        })
+      }
     })
   }
 

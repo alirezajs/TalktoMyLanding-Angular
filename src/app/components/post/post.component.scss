@@ -36,6 +36,15 @@
     }
     .carousel-control-prev {
       left: -100px;
+      @include responsive(sm) {
+        left: 0;
+      }
+      @include responsive(xsm) {
+        left: 0;
+      }
+      @include responsive(md) {
+        left: 0;
+      }
     }
   }
   ///*****

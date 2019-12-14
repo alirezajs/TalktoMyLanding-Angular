@@ -5,7 +5,8 @@ import { CommentComponent } from './pages/comment/comment.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'comment', component: CommentComponent }
+  { path: 'comment', component: CommentComponent },
+  { path: 'comment/:id', component: CommentComponent }
 ];
 
 @NgModule({
