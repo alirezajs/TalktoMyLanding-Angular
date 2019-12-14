@@ -1,4 +1,4 @@
-import { IComment } from 'src/app/models/comment.interface';
+import { IComment } from '../../models/comment.interface';
 
 export default interface IAppState {
     comment: IComment;

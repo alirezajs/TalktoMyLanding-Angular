@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { IComment } from '../../models/comment.interface'
-import { CommentService } from 'src/app/services/comment.service';
 @Component({
   selector: 'app-comment-card',
   templateUrl: './comment-card.component.html',
@@ -8,7 +7,7 @@ import { CommentService } from 'src/app/services/comment.service';
 })
 export class CommentCardComponent implements OnInit {
 
-  constructor(private _commentService: CommentService) {
+  constructor() {
 
   }
   @Input() public comment: IComment

@@ -1,6 +1,4 @@
 import { createAction, props } from '@ngrx/store'
-import { IComment } from 'src/app/models/comment.interface';
-import { ICommentsHttp } from 'src/app/models/http-models/comment-http.interface';
 
 export const GetCommentAction = createAction(
     '[Comment Component] Get Comment',

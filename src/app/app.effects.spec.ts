@@ -15,8 +15,6 @@ describe('AppEffects', () => {
         provideMockActions(() => actions$)
       ]
     });
-
-    effects = TestBed.get<AppEffects>(AppEffects);
   });
 
   it('should be created', () => {

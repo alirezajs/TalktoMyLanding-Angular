@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ICommentsHttp } from 'src/app/models/http-models/comment-http.interface';
-import { CommentService } from 'src/app/services/comment.service';
 import { ActivatedRoute } from '@angular/router';
+import { CommentService } from '../../services/comment.service';
+import { ICommentsHttp } from '../../models/http-models/comment-http.interface';
 
 @Component({
   selector: 'app-comment',
@@ -11,7 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 export class CommentComponent implements OnInit {
 
   constructor(
-    private _commentService: CommentService,
+    private readonly _commentService: CommentService,
     private _route: ActivatedRoute) { }
 
   comment: ICommentsHttp;

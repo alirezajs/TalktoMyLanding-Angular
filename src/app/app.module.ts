@@ -23,6 +23,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { CommentCardComponent } from './components/comment-card/comment-card.component';
 import { ResponseCommentCardComponent } from './components/response-comment-card/response-comment-card.component';
 import { MessageTimePipe } from './pipes/message-time-pipe';
+import { CommentService } from './services/comment.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +41,7 @@ import { MessageTimePipe } from './pipes/message-time-pipe';
     MessageTimePipe,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
     CarouselModule.forRoot(),
@@ -54,7 +55,9 @@ import { MessageTimePipe } from './pipes/message-time-pipe';
     }),
     EffectsModule.forRoot([AppEffects])
   ],
-  providers: [{
+  providers: [
+    CommentService,
+    {
     provide: HTTP_INTERCEPTORS,
     useClass: RequestInterceptor,
     multi: true

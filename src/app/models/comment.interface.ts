@@ -9,5 +9,6 @@ export interface IComment {
     view_count: number;
     report_count: number;
     comment_count: number;
+    content: string;
     comments: IComment[]
 }

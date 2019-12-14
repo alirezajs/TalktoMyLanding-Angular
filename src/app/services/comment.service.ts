@@ -3,9 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { ICommentsHttp } from '../models/http-models/comment-http.interface';
 import { Observable } from 'rxjs';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class CommentService {
 
   constructor(private _http: HttpClient) { }

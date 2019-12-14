@@ -1,7 +1,6 @@
 import { createReducer, Action, on } from "@ngrx/store";
 import * as AppActions from '../actions/app.actions'
 import IAppState, { initialAppState } from '../state/app.state';
-import { IComment } from 'src/app/models/comment.interface';
 
 
 export const initialState = initialAppState();

@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Store, Action } from '@ngrx/store';
 import { createEffect, ofType, Actions } from '@ngrx/effects';
-import { CommentService } from 'src/app/services/comment.service';
+import { CommentService } from '../../services/comment.service';
 import { Observable, of } from 'rxjs';
 import { catchError, map, mergeMap } from 'rxjs/operators';
 import IAppState from '../state/app.state';
 import * as AppActions from '../actions/app.actions'
-import { ICommentsHttp } from 'src/app/models/http-models/comment-http.interface';
+import { ICommentsHttp } from '../../models/http-models/comment-http.interface';
 
 @Injectable()
 export class HomeEffects {
