@@ -12,7 +12,8 @@
         </div>
         <div class="col align-self-end text-left">
             <i class="fa fa-calendar-o ml-1"></i>
-            {{comment.created_time  | messageTime}}
+            {{ getTimeSpan(comment.created_time) }}
+
         </div>
     </div>
 </div>
