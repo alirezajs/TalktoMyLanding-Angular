@@ -2,7 +2,7 @@
 
 .user-post-section {
   //change ngx
-  /deep/ .carousel {
+  ::ng-deep .carousel {
     .carousel-item {
       padding: 60px 0px;
       min-height: 299px;
